@@ -1,5 +1,7 @@
+//* dataManager.h
 #pragma once
 #include "other.h"
+
 class WATER_DATA {
 
 public:
