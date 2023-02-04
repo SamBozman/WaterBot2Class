@@ -13,7 +13,7 @@
 #include <bits/stdc++.h>
 #include <iostream> // for testing output in main
 #include <set>
-#include <string>
+//#include <string>
 
 #include "BluetoothSerial.h" // Bluetooth Serial -> works ONLY on ESP32
 #include "FS.h"
