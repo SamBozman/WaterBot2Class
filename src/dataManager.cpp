@@ -60,27 +60,23 @@ void WATER_DATA_MANAGER::print_all_data()
 }
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-void WATER_DATA_MANAGER::testWaterData() {
+void WATER_DATA_MANAGER::testWaterData()
+{
 
-  WATER_DATA::target_data sample_data1 = {1, "Test name 1", 100, 5, 350,
-                                          4, 125,           2,   5, false};
-  WATER_DATA::target_data sample_data2 = {2, "Test name 2", 320, 5, 350,
-                                          4, 125,           2,   5, false};
-  WATER_DATA::target_data sample_data3 = {3, "Test name 3", 200, 5, 350,
-                                          4, 125,           2,   5, false};
-  WATER_DATA::target_data sample_data4 = {4, "Test name 4", 400, 5, 350,
-                                          4, 125,           2,   5, false};
-  WATER_DATA::target_data sample_data5 = {5, "Test name 5", 400, 5, 350,
-                                          4, 125,           2,   5, false};
+    WATER_DATA::target_data sample_data1 = { 1, "Test name 1", 100, 5, 350, 4, 125, 2, 5, false };
+    WATER_DATA::target_data sample_data2 = { 2, "Test name 2", 320, 5, 350, 4, 125, 2, 5, false };
+    WATER_DATA::target_data sample_data3 = { 3, "Test name 3", 200, 5, 350, 4, 125, 2, 5, false };
+    WATER_DATA::target_data sample_data4 = { 4, "Test name 4", 400, 5, 350, 4, 125, 2, 5, false };
+    WATER_DATA::target_data sample_data5 = { 5, "Test name 5", 400, 5, 350, 4, 125, 2, 5, false };
 
-  insert_data(sample_data1);
-  insert_data(sample_data2);
-  insert_data(sample_data3);
-  insert_data(sample_data4);
-  insert_data(sample_data5);
+    insert_data(sample_data1);
+    insert_data(sample_data2);
+    insert_data(sample_data3);
+    insert_data(sample_data4);
+    insert_data(sample_data5);
 
-  //  Print it out, delete one entry and print again
-  print_all_data(); // View data before deletion
-  delete_data(5);   // remove sample_data5
-  print_all_data(); // View dta after deletion
+    //  Print it out, delete one entry and print again
+    print_all_data(); // View data before deletion
+    delete_data(3); // remove sample_data5
+    print_all_data(); // View dta after deletion
 }
